@@ -12,3 +12,7 @@ class Osoba:
     def age(self, value: int):
         from datetime import date
         self._birth_year = date.today().year - value
+
+    @age.deleter
+    def age(self):
+        del self._birth_year
