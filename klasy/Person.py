@@ -7,3 +7,6 @@ class Person:
 
     def powitanie(self) -> str:
         return f"Witam, jestem {self.name}, {self.surname}"
+
+    def __repr__(self) -> str:
+        return f"Klasa Person(imie={self.name}, nazwisko={self.surname})"
