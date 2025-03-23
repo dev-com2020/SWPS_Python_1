@@ -39,3 +39,9 @@ def test_repr_output():
     t = Termometr()
     t.celsius = 36.6
     assert repr(t) == "Klasa Termometr(temperatura=36.6)"
+
+
+def test_celsius_to_fahrenheit():
+    t = Termometr()
+    t.celsius = 0
+    assert t.to_fahrenheit() == 32

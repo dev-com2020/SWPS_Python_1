@@ -1,6 +1,6 @@
 class Termometr:
     def __init__(self):
-        self._celsius = 30
+        self._celsius = 0
 
     @property
     def celsius(self) -> float:
@@ -14,3 +14,9 @@ class Termometr:
 
     def __repr__(self) -> str:
         return f"Klasa Termometr(temperatura={self._celsius})"
+
+    def to_fahrenheit(self) -> float:
+        return (self._celsius * 9 / 5) + 32
+
+    def to_kelvin(self) -> float:
+        return self._celsius + 273.15
