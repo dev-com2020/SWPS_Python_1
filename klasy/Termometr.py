@@ -1,6 +1,6 @@
 class Termometr:
     def __init__(self):
-        self._celsius = 0
+        self._celsius = 30
 
     @property
     def celsius(self) -> float:
